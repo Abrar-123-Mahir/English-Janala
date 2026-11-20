@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Janala</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header">
+
+        <a href="#home" class="logo">
+            <span>English</span>
+            <img src="image/logo.png" alt="English Janala Logo">
+            <span>জানালা</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#faq">
+                <i class="fa-solid fa-circle-question"></i>
+                FAQ
+            </a>
+
+            <a href="#vocabulary">
+                <i class="fa-solid fa-book-open"></i>
+                Learn
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main id="home">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero container">
+
+            <div class="hero-copy">
+
+                <h1><span>English</span> is Easy!!</h1>
+
+                <p>
+                    আজ থেকেই ইংরেজি শেখা শুরু করুন।
+                    প্রতিদিন নতুন শব্দ শিখুন, সঠিক উচ্চারণ শুনুন
+                    এবং নিজের vocabulary আরও সমৃদ্ধ করুন।
+                </p>
+
+                <form id="search-form" class="search-form">
+
+                    <label class="sr-only" for="search-input">
+                        Search vocabulary
+                    </label>
+
+                    <input
+                        id="search-input"
+                        type="search"
+                        placeholder="Search a word..."
+                    >
+
+                    <button type="submit" class="primary-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="hero-image-wrap">
+
+                <img
+                    src="image/hero.png"
+                    alt="English teacher"
+                    class="hero-image"
+                    onerror="this.style.display='none'; document.querySelector('.hero-placeholder').style.display='grid';"
+                >
+
+                <div class="hero-placeholder">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Hero Image</span>
+                </div>
+
+                <span class="dot-pattern"></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VOCABULARY ================= -->
+        <section class="vocabulary-section container" id="vocabulary">
+
+            <div class="section-heading">
+
+                <h2><span>Let's</span> Learn Vocabularies</h2>
+
+                <p>Select a lesson and start learning new words.</p>
+
+            </div>
+
+
+            <!-- LESSON BUTTONS -->
+            <div
+                id="lesson-buttons"
+                class="lesson-buttons"
+                aria-label="Vocabulary lessons"
+            >
+                <p class="muted">Loading lessons...</p>
+            </div>
+
+
+            <!-- TOOLBAR -->
+            <div class="vocabulary-toolbar">
+
+                <p id="result-heading">
+                    Select a Lesson to start
+                </p>
+
+                <button
+                    id="show-all-btn"
+                    class="text-btn"
+                    type="button"
+                >
+                    <i class="fa-solid fa-layer-group"></i>
+                    Show all words
+                </button>
+
+            </div>
+
+
+            <!-- WORD CONTAINER -->
+            <div id="word-container" class="word-grid">
+
+                <div class="empty-state default-state">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3>একটি Lesson Select করুন।</h3>
+
+                    <p>শুরু করতে উপরের Lesson বেছে নিন।</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+        <section class="faq-section container" id="faq">
+
+            <div class="section-heading">
+                <h2><span>Frequently</span> Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+
+                <details>
+                    <summary>How can I start learning vocabulary?</summary>
+                    <p>
+                        Select any lesson button.
+                        The words of that lesson will appear as cards.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>How can I listen to a word's pronunciation?</summary>
+                    <p>
+                        Click the speaker icon on a vocabulary card.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Where can I see word details?</summary>
+                    <p>
+                        Click the information icon on a card
+                        to open the details modal.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>How can I search for a word?</summary>
+                    <p>
+                        Type a word in the search box.
+                        Matching words and meanings will appear.
+                    </p>
+                </details>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="footer-inner container">
+
+            <div>
+
+                <a class="logo footer-logo" href="#home">
+                    English <span>জানালা</span>
+                </a>
+
+                <p>Learn English, one word at a time.</p>
+
+            </div>
+
+
+            <div class="social-links" aria-label="Social links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= WORD DETAILS MODAL ================= -->
+    <div id="word-modal" class="modal" aria-hidden="true">
+
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-word"
+        >
+
+            <button
+                class="modal-x"
+                type="button"
+                data-close-modal
+                aria-label="Close modal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <p class="modal-label">Word Details</p>
+
+            <h2 id="modal-word">Word</h2>
+
+            <p id="modal-pronunciation" class="modal-pronunciation"></p>
+
+
+            <div class="detail-block">
+
+                <h3>
+                    <i class="fa-solid fa-quote-left"></i>
+                    Example
+                </h3>
+
+                <p id="modal-example">Example sentence</p>
+
+            </div>
+
+
+            <div class="detail-block">
+
+                <h3>
+                    <i class="fa-solid fa-tags"></i>
+                    Synonyms
+                </h3>
+
+                <div id="modal-synonyms" class="synonym-list"></div>
+
+            </div>
+
+
+            <button
+                id="complete-learning"
+                class="primary-btn complete-btn"
+                type="button"
+            >
+                Complete Learning
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="app.js"></script>
+
+</body>
+</html>
